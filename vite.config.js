@@ -10,5 +10,5 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
-  base: 'https://JuanDriko/github.com/FavoritesPokemons/'
+  base: 'https://juandriko.github.io/FavoritesPokemons/',
 })
