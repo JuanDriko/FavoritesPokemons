@@ -2,6 +2,10 @@
 
 Esta es una aplicación sencilla creada con Vue.js 3 para visualizar y gestionar una lista de Pokémon favoritos. La aplicación obtiene los datos de los Pokémon desde la API pública de [PokeAPI](https://pokeapi.co/). Los usuarios pueden buscar Pokémon, agregar y eliminar de sus favoritos, y ver detalles adicionales sobre cada Pokémon en un modal. También incluye una funcionalidad para compartir los datos de un Pokémon a través del portapapeles.
 
+<h1>
+<a href="https://juandriko.github.io/FavoritesPokemons/">Ver proyecto</a>
+</h1>
+
 ## Tecnologías Utilizadas
 
 - Vue.js 3 (Composition API): Framework utilizado para crear la interfaz de usuario, gestionar el estado reactivo y organizar los componentes (como el modal de detalles y el loader que simula la carga de datos).
