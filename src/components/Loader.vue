@@ -1,6 +1,6 @@
 <template>
   <div class="loader">
-    <img src="@/assets/img/pokeball.svg" class="spin" alt="Loading..." />
+    <img src="../assets/img/Pokeball.svg" class="spin" alt="Loading..." />
   </div>
 </template>
 
