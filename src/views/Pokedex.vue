@@ -59,9 +59,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { ref, onMounted, computed, watch } from 'vue'
 import { getPokemons, getDetail } from '../services/services.js'
-import { ref, onMounted, computed } from 'vue'
 import Loader from '../components/Loader.vue'
 import { useFavoriteStore } from '../stores/store.js'
 import Details from '../components/Details.vue'
@@ -88,7 +87,9 @@ export default {
 
             return showFavorites.value ? favoriteStore.favorites : pokemon.value
         })
-
+        watch(showFavorites, () => {
+            searchQuery.value = ''
+        })
 
         const addFavorite = poke => {
             favoriteStore.addFavorite(poke)
