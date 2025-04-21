@@ -34,7 +34,7 @@
                 <template v-else>
                     <h2>Uh-Oh!</h2>
                     <p>You look lost on your journey!</p>
-                    <RouterLink class="btn btn-red rounded-pill" to="/">Go back home</RouterLink>
+                    <RouterLink class="btn btn-red rounded-pill" to="/FavoritesPokemons">Go back home</RouterLink>
                 </template>
             </div>
 

@@ -6,7 +6,7 @@ const router = createRouter({
   history: createWebHistory (),
   routes: [
     {
-      path: '/',
+      path: '/FavoritesPokemons',
       name: 'home',
       component: Home,
     },
