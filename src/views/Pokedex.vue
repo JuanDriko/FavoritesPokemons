@@ -27,16 +27,16 @@
                 </a>
             </div>
             <div v-else class="mt-5 text-center">
-    <template v-if="showFavorites && !searchQuery">
-        <h2>No favorites yet</h2>
-        <p>You haven't added any favorite Pokémon.</p>
-    </template>
-    <template v-else>
-        <h2>Uh-Oh!</h2>
-        <p>You look lost on your journey!</p>
-        <RouterLink class="btn btn-red rounded-pill" to="/">Go back home</RouterLink>
-    </template>
-</div>
+                <template v-if="showFavorites && !searchQuery">
+                    <h2>No favorites yet</h2>
+                    <p>You haven't added any favorite Pokémon.</p>
+                </template>
+                <template v-else>
+                    <h2>Uh-Oh!</h2>
+                    <p>You look lost on your journey!</p>
+                    <RouterLink class="btn btn-red rounded-pill" to="/">Go back home</RouterLink>
+                </template>
+            </div>
 
         </div>
 
@@ -100,13 +100,13 @@ export default {
 
         const openModal = async poke => {
             loading.value = true
-            try{
+            try {
                 const data = await getDetail(poke.name)
                 selectedPokemon.value = data
                 showModal.value = true
-            }catch (error) {
+            } catch (error) {
                 console.error('Error al cargar detalles del Pokémon:', error)
-            }finally {
+            } finally {
                 loading.value = false
             }
         }

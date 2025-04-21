@@ -43,9 +43,9 @@ const props = defineProps({
 })
 const emit = defineEmits(['close']);
 const sharePokemon = () => {
-  const data = `name:${props.pokemon.name}, Weight: ${props.pokemon.weight}, Height: ${props.pokemon.height}, Types: ${props.pokemon.types.map(t => t.type.name).join(', ')}`;
-  navigator.clipboard.writeText(data);
-  console.log('Pokemon data copied to clipboard:', data);
+    const data = `name:${props.pokemon.name}, Weight: ${props.pokemon.weight}, Height: ${props.pokemon.height}, Types: ${props.pokemon.types.map(t => t.type.name).join(', ')}`;
+    navigator.clipboard.writeText(data);
+    console.log('Pokemon data copied to clipboard:', data);
 }
 
 </script>

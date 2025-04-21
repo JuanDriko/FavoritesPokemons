@@ -14,7 +14,7 @@ Esta es una aplicación sencilla creada con Vue.js 3 para visualizar y gestionar
 
 ## Instalación
 
--  git clone
+-  git clone https://github.com/JuanDriko/FavoritesPokemons.git
 - npm install
 - npm run dev
 
